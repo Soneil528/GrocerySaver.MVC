@@ -1,0 +1,16 @@
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\bin\Debug\GrocerySaver.Services.dll.config
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\bin\Debug\GrocerySaver.Services.dll
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\bin\Debug\GrocerySaver.Services.pdb
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\bin\Debug\EntityFramework.dll
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\bin\Debug\EntityFramework.xml
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\obj\Debug\GrocerySaver.Services.csprojAssemblyReference.cache
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\obj\Debug\GrocerySaver.Services.csproj.CoreCompileInputs.cache
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\obj\Debug\GrocerySaver.Services.csproj.CopyComplete
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\obj\Debug\GrocerySaver.Services.dll
+C:\RedBadge\GrocerySaver\GrocerySaver.Services\obj\Debug\GrocerySaver.Services.pdb

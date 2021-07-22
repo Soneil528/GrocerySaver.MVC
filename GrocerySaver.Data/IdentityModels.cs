@@ -34,9 +34,9 @@ namespace GrocerySaver.Data
 
         public DbSet<Beverage> Beverages { get; set; }
         public DbSet<Meat> Meats { get; set; }
-        public DbSet<Dairies> Dairy { get; set; }
-        public DbSet<Vegetables> Vegetable { get; set; }
-        public DbSet<Fruits> Fruit { get; set; }
+        public DbSet<Dairy> Dairies { get; set; }
+        public DbSet<Vegetable> Vegetables { get; set; }
+        public DbSet<Fruit> Fruits { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

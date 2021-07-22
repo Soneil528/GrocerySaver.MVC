@@ -17,9 +17,7 @@ namespace GrocerySaver.Data
         public string Name { get; set; }
         [Required]
         public int ShelfLifeInDays { get; set; }
-        [Required]
         public int AmountInOunces { get; set; }
-        [Required]
         public int Count { get; set; }
 
         public DateTimeOffset CreatedUtc { get; set; }

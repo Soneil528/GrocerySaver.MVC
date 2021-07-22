@@ -1,10 +1,10 @@
-﻿@model IEnumerable<GrocerySaver.Models.MeatListItem>
+﻿@model IEnumerable<GrocerySaver.Models.BeverageListItem>
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Meats</h2>
+<h2>Beverages</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -12,7 +12,7 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.MeatId)
+            @Html.DisplayNameFor(model => model.BeverageId)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -35,7 +35,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.MeatId)
+            @Html.DisplayFor(modelItem => item.BeverageId)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Name)

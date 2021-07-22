@@ -170,9 +170,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BeverageController.cs" />
     <Compile Include="Controllers\DairyController.cs" />
+    <Compile Include="Controllers\FruitController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MeatController.cs" />
+    <Compile Include="Controllers\VegatableController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -240,6 +242,8 @@
     <Content Include="Views\Meat\Index.cshtml" />
     <Content Include="Views\Beverage\Index.cshtml" />
     <Content Include="Views\Dairy\Index.cshtml" />
+    <Content Include="Views\Fruit\Index.cshtml" />
+    <Content Include="Views\Vegatable\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

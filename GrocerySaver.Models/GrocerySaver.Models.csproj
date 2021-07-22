@@ -56,8 +56,10 @@
   <ItemGroup>
     <Compile Include="BeverageListItem.cs" />
     <Compile Include="DairyListItem.cs" />
+    <Compile Include="FruitListItem.cs" />
     <Compile Include="MeatListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VegetableListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

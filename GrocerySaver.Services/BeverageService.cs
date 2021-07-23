@@ -36,7 +36,7 @@ namespace GrocerySaver.Services
             }
         }
 
-        public IEnumerable<BeverageListItem> GetBeverages()
+        public IEnumerable<BeverageListItem> GetBeverages() // Beverages from a specific user
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -50,6 +50,9 @@ namespace GrocerySaver.Services
                                 {
                                     BeverageId = e.BeverageId,
                                     Name = e.Name,
+                                    ShelfLifeInDays = e.ShelfLifeInDays,
+                                    AmountInOunces = e.AmountInOunces,
+                                    Count = e.Count,
                                     CreatedUtc = e.CreatedUtc
                                 }
                         );

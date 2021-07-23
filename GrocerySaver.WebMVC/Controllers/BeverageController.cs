@@ -1,4 +1,6 @@
 ﻿using GrocerySaver.Models;
+using GrocerySaver.Services;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +14,12 @@ namespace GrocerySaver.WebMVC.Controllers
     {
 
         // GET: Beverage
-        public ActionResult Index()
+        public ActionResult Index()// Displays all beverages for the current user
         {
-            var model = new BeverageListItem[0];
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new BeverageService(userId);
+            var model = service.GetBeverages();
+
             return View(model);
         }
 
@@ -26,15 +31,29 @@ namespace GrocerySaver.WebMVC.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(BeverageCreate beverage)
+        public ActionResult Create(BeverageCreate model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid) return View(model);
+
+            var service = CreateBeverageService();
+
+            if (service.CreateBeverage(model))
             {
-                
+                TempData["SaveResult"] = "Your beverage was created.";
+                return RedirectToAction("Index");
+            };
 
-            }
-            return View(beverage);
+            ModelState.AddModelError("", "Beverage could not be created.");
 
+            return View(model);
+
+        }
+
+        private BeverageService CreateBeverageService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new BeverageService(userId);
+            return service;
         }
     }
 }

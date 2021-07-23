@@ -19,5 +19,6 @@ namespace GrocerySaver.Models
         public int AmountInOunces { get; set; }
         [Required]
         public int Count { get; set; }
+
     }
 }

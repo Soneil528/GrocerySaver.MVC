@@ -54,12 +54,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BeverageService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GrocerySaver.Data\GrocerySaver.Data.csproj">
+      <Project>{a867a5e5-87f6-4b3e-940f-cc5c66d467ce}</Project>
+      <Name>GrocerySaver.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GrocerySaver.Models\GrocerySaver.Models.csproj">
+      <Project>{5c1e6259-167e-44ca-b4bd-8ec2c598f689}</Project>
+      <Name>GrocerySaver.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 
 namespace GrocerySaver.Models
 {
-    public class VegetableListItem
+    public class BeverageCreate
     {
-        [Display(Name = "Id")]
-        public int VegetableId { get; set; }
-        [Display(Name = "Name")]
+        [Required]
         public string Name { get; set; }
-        [Display(Name = "Days Left to Expire")]
+        [Required]
+        [Display(Name="Days Left to Expire")]
         public int ShelfLifeInDays { get; set; }
-        [Display(Name = "Quantity")]
+        [Required]
+        [Display(Name="Fluid Ounces")]
+        public int AmountInOunces { get; set; }
+        [Required]
         public int Count { get; set; }
-        [Display(Name = "Created")]
-        public DateTimeOffset CreatedUtc { get; set; }
     }
 }

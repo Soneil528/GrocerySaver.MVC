@@ -7,9 +7,10 @@ using System.Web.Mvc;
 
 namespace GrocerySaver.WebMVC.Controllers
 {
-    public class VegatableController : Controller
+    [Authorize]
+    public class VegetableController : Controller
     {
-        // GET: Vegatable
+        // GET: Vegetable
         public ActionResult Index()
         {
             var model = new VegetableListItem[0];

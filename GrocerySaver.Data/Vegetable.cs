@@ -10,7 +10,7 @@ namespace GrocerySaver.Data
     public class Vegetable
     {
         [Key]
-        public int DairyId { get; set; }
+        public int VegetableId { get; set; }
         [Required]
         public Guid OwnerId { get; set; }
         [Required]

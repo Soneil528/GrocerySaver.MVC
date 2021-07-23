@@ -59,12 +59,29 @@
     <Compile Include="Fruit.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Meat.cs" />
+    <Compile Include="Migrations\202107222217501_InitialCreate.cs" />
+    <Compile Include="Migrations\202107222217501_InitialCreate.Designer.cs">
+      <DependentUpon>202107222217501_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107230214524_CodeFirst.cs" />
+    <Compile Include="Migrations\202107230214524_CodeFirst.Designer.cs">
+      <DependentUpon>202107230214524_CodeFirst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vegetable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202107222217501_InitialCreate.resx">
+      <DependentUpon>202107222217501_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107230214524_CodeFirst.resx">
+      <DependentUpon>202107230214524_CodeFirst.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

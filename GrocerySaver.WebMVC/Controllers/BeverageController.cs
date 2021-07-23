@@ -10,11 +10,31 @@ namespace GrocerySaver.WebMVC.Controllers
     [Authorize]
     public class BeverageController : Controller
     {
+
         // GET: Beverage
         public ActionResult Index()
         {
             var model = new BeverageListItem[0];
             return View(model);
+        }
+
+        // GET
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(BeverageCreate beverage)
+        {
+            if (ModelState.IsValid)
+            {
+                
+
+            }
+            return View(beverage);
+
         }
     }
 }

@@ -30,3 +30,6 @@ C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver.Data.csproj.CopyComplete
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver.Data.dll
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver.Data.pdb
+C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver.Data.Migrations.InitialCreate.resources
+C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver.Data.csproj.GenerateResource.cache
+C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver.Data.Migrations.CodeFirst.resources

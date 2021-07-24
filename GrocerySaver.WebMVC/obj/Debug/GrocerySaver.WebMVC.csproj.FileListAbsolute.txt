@@ -115,6 +115,8 @@ C:\RedBadge\GrocerySaver\GrocerySaver.WebMVC\bin\GrocerySaver.Models.pdb
 C:\RedBadge\GrocerySaver\GrocerySaver.WebMVC\bin\GrocerySaver.Models.dll.config
 C:\RedBadge\GrocerySaver\GrocerySaver.WebMVC\bin\GrocerySaver.Services.pdb
 C:\RedBadge\GrocerySaver\GrocerySaver.WebMVC\bin\GrocerySaver.Services.dll.config
+C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.WebMVC\obj\Debug\GrocerySaver.WebMVC.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.WebMVC\obj\Debug\GrocerySaver.WebMVC.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.WebMVC\bin\GrocerySaver.WebMVC.dll.config
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.WebMVC\bin\GrocerySaver.WebMVC.dll
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.WebMVC\bin\GrocerySaver.WebMVC.pdb
@@ -227,8 +229,6 @@ C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.WebMVC\bin\Microsoft.Owin.S
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.WebMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.WebMVC\bin\Microsoft.Owin.Security.OAuth.xml
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.WebMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.WebMVC\obj\Debug\GrocerySaver.WebMVC.csprojAssemblyReference.cache
-C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.WebMVC\obj\Debug\GrocerySaver.WebMVC.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.WebMVC\obj\Debug\GrocerySaver.WebMVC.csproj.CopyComplete
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.WebMVC\obj\Debug\GrocerySaver.WebMVC.dll
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.WebMVC\obj\Debug\GrocerySaver.WebMVC.pdb

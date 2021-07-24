@@ -1,4 +1,6 @@
 ﻿using GrocerySaver.Models;
+using GrocerySaver.Services;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +15,44 @@ namespace GrocerySaver.WebMVC.Controllers
         // GET: Dairy
         public ActionResult Index()
         {
-            var model = new DairyListItem[0];
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new DairyService(userId);
+            var model = service.GetDairies();
+
             return View(model);
+        }
+
+        // GET
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(DairyCreate model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            var service = CreateDairyService();
+
+            if (service.CreateDairy(model))
+            {
+                TempData["SaveResult"] = "Your dairy item was created.";
+                return RedirectToAction("Index");
+            };
+
+            ModelState.AddModelError("", "Dairy item could not be created.");
+
+            return View(model);
+
+        }
+
+        private DairyService CreateDairyService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new DairyService(userId);
+            return service;
         }
     }
 }

@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BeverageCreate.cs" />
+    <Compile Include="BeverageDetail.cs" />
     <Compile Include="BeverageListItem.cs" />
     <Compile Include="DairyCreate.cs" />
     <Compile Include="DairyListItem.cs" />

@@ -1,0 +1,74 @@
+﻿@model GrocerySaver.Models.BeverageDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BeverageDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BeverageId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BeverageId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShelfLifeInDays)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShelfLifeInDays)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AmountInOunces)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AmountInOunces)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Count)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Count)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedUtc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedUtc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedUtc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedUtc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BeverageId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

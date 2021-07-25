@@ -48,6 +48,14 @@ namespace GrocerySaver.WebMVC.Controllers
 
         }
 
+        public ActionResult Details(int id)
+        {
+            var svc = CreateDairyService();
+            var model = svc.GetDairyById(id);
+
+            return View(model);
+        }
+
         private DairyService CreateDairyService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());

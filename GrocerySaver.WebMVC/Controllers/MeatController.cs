@@ -34,7 +34,7 @@ namespace GrocerySaver.WebMVC.Controllers
             if (!ModelState.IsValid) return View(model);
             
 
-            var service = CreateMeatservice();
+            var service = CreateMeatService();
 
             if (service.CreateMeat(model))
             {
@@ -49,7 +49,15 @@ namespace GrocerySaver.WebMVC.Controllers
 
         }
 
-        private MeatService CreateMeatservice()
+        public ActionResult Details(int id)
+        {
+            var svc = CreateMeatService();
+            var model = svc.GetMeatById(id);
+
+            return View(model);
+        }
+
+        private MeatService CreateMeatService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
             var service = new MeatService(userId);

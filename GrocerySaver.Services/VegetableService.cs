@@ -58,5 +58,26 @@ namespace GrocerySaver.Services
                 return query.ToArray();
             }
         }
+        public VegetableDetail GetVegetableById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Vegetables
+                        .Single(e => e.VegetableId == id && e.OwnerId == _userId);
+                return
+                    new VegetableDetail
+                    {
+                        VegetableId = entity.VegetableId,
+                        Name = entity.Name,
+                        ShelfLifeInDays = entity.ShelfLifeInDays,
+                        AmountInOunces = entity.AmountInOunces,
+                        Count = entity.Count,
+                        CreatedUtc = entity.CreatedUtc,
+                        ModifiedUtc = entity.ModifiedUtc
+                    };
+            }
+        }
     }
 }

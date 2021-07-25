@@ -84,7 +84,7 @@ namespace GrocerySaver.Services
 
         public bool UpdateBeverage(BeverageEdit model)
         {
-            using(var ctx = new ApplicationDbContext())
+            using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
@@ -96,6 +96,20 @@ namespace GrocerySaver.Services
                 entity.AmountInOunces = model.AmountInOunces;
                 entity.Count = model.Count;
 
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeleteBeverage(int beverageId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Beverages
+                        .Single(e => e.BeverageId == beverageId && e.OwnerId == _userId);
+
+                ctx.Beverages.Remove(entity);
                 return ctx.SaveChanges() == 1;
             }
         }

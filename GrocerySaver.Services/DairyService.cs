@@ -98,5 +98,18 @@ namespace GrocerySaver.Services
                 return ctx.SaveChanges() == 1;
             }
         }
+        public bool DeleteDairy(int dairyId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Dairies
+                        .Single(e => e.DairyId == dairyId && e.OwnerId == _userId);
+
+                ctx.Dairies.Remove(entity);
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }

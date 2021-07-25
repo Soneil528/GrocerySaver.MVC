@@ -94,6 +94,23 @@ namespace GrocerySaver.WebMVC.Controllers
 
             return View();
         }
+        public ActionResult Delete(int id)
+        {
+            var svc = CreateVegetableService();
+            var model = svc.GetVegetableById(id);
+
+            return View(model);
+        }
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeletePost(int id)
+        {
+            var service = CreateVegetableService();
+            service.DeleteVegetable(id);
+            TempData["SaveResult"] = "Your vegetable was deleted";
+            return RedirectToAction("Index");
+        }
         private VegetableService CreateVegetableService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());

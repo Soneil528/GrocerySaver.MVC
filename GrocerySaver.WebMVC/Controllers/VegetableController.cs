@@ -55,7 +55,45 @@ namespace GrocerySaver.WebMVC.Controllers
 
             return View(model);
         }
+        public ActionResult Edit(int id)
+        {
+            var service = CreateVegetableService();
+            var detail = service.GetVegetableById(id);
+            var model =
+                new VegetableEdit
+                {
+                    VegetableId = detail.VegetableId,
+                    Name = detail.Name,
+                    ShelfLifeInDays = detail.ShelfLifeInDays,
+                    AmountInOunces = detail.AmountInOunces,
+                    Count = detail.Count
+                };
+            return View(model);
+        }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, VegetableEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            if (model.VegetableId != id)
+            {
+                ModelState.AddModelError("", "Id Mismatch");
+                return View(model);
+            }
+
+            var service = CreateVegetableService();
+
+            if (service.UpdateVegetable(model))
+            {
+                TempData["SaveResult"] = "Your vegetable was updated.";
+                return RedirectToAction("Index");
+            }
+            ModelState.AddModelError("", "Vegetable could not be updated.");
+
+            return View();
+        }
         private VegetableService CreateVegetableService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());

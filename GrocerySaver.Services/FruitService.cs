@@ -79,5 +79,22 @@ namespace GrocerySaver.Services
                     };
             }
         }
+        public bool UpdateFruit(FruitEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Fruits
+                        .Single(e => e.FruitId == model.FruitId && e.OwnerId == _userId);
+
+                entity.Name = model.Name;
+                entity.ShelfLifeInDays = model.ShelfLifeInDays;
+                entity.AmountInOunces = model.AmountInOunces;
+                entity.Count = model.Count;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }

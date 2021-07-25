@@ -254,6 +254,11 @@
     <Content Include="Views\Fruit\Details.cshtml" />
     <Content Include="Views\Meat\Details.cshtml" />
     <Content Include="Views\Vegetable\Details.cshtml" />
+    <Content Include="Views\Beverage\Edit.cshtml" />
+    <Content Include="Views\Dairy\Edit.cshtml" />
+    <Content Include="Views\Fruit\Edit.cshtml" />
+    <Content Include="Views\Meat\Edit.cshtml" />
+    <Content Include="Views\Vegetable\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

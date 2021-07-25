@@ -264,6 +264,7 @@
     <Content Include="Views\Fruit\Delete.cshtml" />
     <Content Include="Views\Meat\Delete.cshtml" />
     <Content Include="Views\Vegetable\Delete.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\DateTimeOffset.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

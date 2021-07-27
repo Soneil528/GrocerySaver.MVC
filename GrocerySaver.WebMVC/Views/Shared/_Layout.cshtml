@@ -7,6 +7,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+@RenderSection("head", required: false)
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -23,9 +24,9 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Beverages", "Index", "Beverage")</li>
-                    <li>@Html.ActionLink("Meat", "Index", "Meat")</li>
+                    <li>@Html.ActionLink("Meats", "Index", "Meat")</li>
                     <li>@Html.ActionLink("Dairy", "Index", "Dairy")</li>
-                    <li>@Html.ActionLink("Vegetables", "Index", "Vegetables")</li>
+                    <li>@Html.ActionLink("Vegetables", "Index", "Vegetable")</li>
                     <li>@Html.ActionLink("Fruit", "Index", "Fruit")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>

@@ -1,7 +1,13 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
+<body>
+    @section head{
+        <style type="text/css">
+        body { background-image: url("https://images.unsplash.com/photo-1557821552-17105176677c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1789&q=80"); color: black; font-weight: bold; font-size: initial; margin: 0; }
+        </style>
+    }
+</body>
 <div class="jumbotron">
     <h1>Grocery Saver</h1>
     <p class="lead">Grocery Saver is a handy web application that lets you know what perishable groceries that you have are close to and have expired. This application
@@ -22,5 +28,9 @@
         <p>Here you will find what grocery items you have that are soon expiring. You might even find something you forgot you even had! Eat it soon or so that you don't waste your money!</p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Eat Now! &raquo;</a></p>
     </div>
-    
+    <div class="col-md-4">
+        <h2>Throw Away</h2>
+        <p>Here you will find a list of groceries that have expired. If this application is used effectively you are unlikely to need this button, but just in case FYI it is available to you.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Throw Away &raquo;</a></p>
+    </div>
 </div>

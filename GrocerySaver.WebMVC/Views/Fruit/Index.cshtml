@@ -4,8 +4,14 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-
+<h2>Fruits</h2>
+<body>
+    @section head{
+        <style type="text/css">
+        body { background-image: url("https://images.unsplash.com/photo-1485962232502-f25e5874a8d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=800"); color: black; font-weight: bold; font-size: initial; margin: 0; }
+        </style>
+    }
+</body>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>

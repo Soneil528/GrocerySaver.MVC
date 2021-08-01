@@ -31,12 +31,12 @@ namespace GrocerySaver.Data
         {
             return new ApplicationDbContext();
         }
-
-        public DbSet<Beverage> Beverages { get; set; }
-        public DbSet<Meat> Meats { get; set; }
-        public DbSet<Dairy> Dairies { get; set; }
-        public DbSet<Vegetable> Vegetables { get; set; }
-        public DbSet<Fruit> Fruits { get; set; }
+        public virtual DbSet<AllGroceries> AllGroceriess { get; set; }
+        public virtual DbSet<Beverage> Beverages { get; set; }
+        public virtual DbSet<Meat> Meats { get; set; }
+        public virtual DbSet<Dairy> Dairies { get; set; }
+        public virtual DbSet<Vegetable> Vegetables { get; set; }
+        public virtual DbSet<Fruit> Fruits { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

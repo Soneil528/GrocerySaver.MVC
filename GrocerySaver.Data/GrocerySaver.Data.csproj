@@ -54,17 +54,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllGroceries.cs" />
     <Compile Include="Beverage.cs" />
     <Compile Include="Dairy.cs" />
     <Compile Include="Fruit.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Meat.cs" />
+    <Compile Include="Migrations\202108012240326_ForeignKey.cs" />
+    <Compile Include="Migrations\202108012240326_ForeignKey.Designer.cs">
+      <DependentUpon>202108012240326_ForeignKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vegetable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202108012240326_ForeignKey.resx">
+      <DependentUpon>202108012240326_ForeignKey.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -26,8 +26,6 @@ namespace GrocerySaver.Data
         public DateTimeOffset CreatedUtc { get; set; }
 
         public DateTimeOffset? ModifiedUtc { get; set; }
-        [ForeignKey("AllGroceries")]
-        public int GroceryId { get; set; }
-        public AllGroceries AllGroceries { get; set; }
+        
     }
 }

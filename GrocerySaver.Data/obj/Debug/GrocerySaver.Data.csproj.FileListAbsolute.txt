@@ -25,10 +25,10 @@ C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\bin\Debug\EntityFramew
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver.Data.csprojAssemblyReference.cache
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver.Data.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver.Data.csproj.CopyComplete
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver.Data.dll
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver.Data.pdb
-C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver.Data.Migrations.ForeignKey.resources
+C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver.Data.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver.Data.Migrations.InitialMigration.resources
 C:\ElevenFiftyProjects\GrocerySaver.MVC\GrocerySaver.Data\obj\Debug\GrocerySaver.Data.csproj.GenerateResource.cache
